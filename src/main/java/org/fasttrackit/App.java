@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
         // declaring a variable and instantiating a Car object
         //this is aso called initializing a variable
-       Car firstCompetitor  = new Car();
+       Car firstCompetitor  = new Car(new Engine ());
        firstCompetitor.name = "Dacia";
        firstCompetitor.color = "black";
        firstCompetitor.doorCount =5;

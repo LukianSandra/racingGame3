@@ -31,7 +31,8 @@ public class App {
         System.out.println(firstEngine.manufacturer);
         System.out.println(firstCompetitor.engine.manufacturer);
 
-
+firstCompetitor.accelerate(speed100,duration30);
+        System.out.println("Traveled distance"+ TraveledDistance);
 
     }
 }

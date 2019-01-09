@@ -9,7 +9,13 @@ boolean running;
         this.engine = engine;
     }
 
-    public Autovehicle(Engine engine) {
+    public void setEngine (Engine engine) {
     this.engine = engine;
+
+
 }
+//constructor overloading
+    public AutoVehicle() {
+        this(new Engine());
+    }
 }

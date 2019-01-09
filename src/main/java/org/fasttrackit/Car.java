@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
-public class Car<Autovehicle> extends Autovehicle {
+//inheritance or "is-a" relationship
+public class Car extends AutoVehicle {
 
     //instance variables (declared as properties of a class)
     //they receive default values (null for objects, 0 for numbers,false for booleans)
@@ -9,7 +10,7 @@ public class Car<Autovehicle> extends Autovehicle {
     int  doorCount;
 
     public Car (Engine engine){
-        super (engine)
+        super(engine);
     }
     double mileage;
 

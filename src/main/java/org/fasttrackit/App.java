@@ -8,6 +8,13 @@ public class App {
     public static void main(String[] args) {
         Engine engine = new Engine();
         engine.manufacturer = "Renault";
+
+
+        CheatingCar cheatingCompetitor = new CheatingCar();
+        cheatingCompetitor.setName ("Test1");
+        double distance = cheatingCompetitor.accelerate (speed:70);
+        System.out.println("Cheating parcurge distanta de"+ distance);
+        }
         AutoVehicle autoVehicle = new AutoVehicle(engine);
 
         new Car();

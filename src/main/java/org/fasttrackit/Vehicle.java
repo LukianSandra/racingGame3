@@ -86,4 +86,7 @@ public  double accelerate (double speed){
 public String getName () {
         return name;
 }
+//method used to just demonstrate co-variant return types
+    public Vehicle returnSomeVehicle(){
+return this;
 }

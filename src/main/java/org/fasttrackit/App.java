@@ -6,6 +6,13 @@ package org.fasttrackit;
  */
 public class App {
     public static void main(String[] args) {
+        //modulo operator
+        System.out.println(4 % 2);
+        System.out.println(4 % 3);
+
+//polymorphism - an object can take multiple forms
+     Vehicle cheatingCar = new CheatingCar();
+
         Engine engine = new Engine();
         engine.manufacturer = "Renault";
 

@@ -27,6 +27,8 @@ public class Vehicle {
     private String color;
     private int wheelCount;
     private double mileage;
+    private long totalKm;
+    private double fuelLevel = 70 ;
 
 
 
@@ -70,7 +72,17 @@ public class Vehicle {
 double distance = speed * durationInHours;
         System.out.println("Travel distance" + distance);
 
+        double spentFuel = distance * mileage/100;
+
+      // same as: fuelLevel = fuelLevel - spentFuel;
+        fuelLevel -= spentFuel;
+        System.out.println("Remaining fuel" + fuelLevel);
+
+        totalKm += distance;
+        System.out.println("Total Traveled distance" + totalKm);
+
         return distance;
+
     }
     //method overloading
 
@@ -89,4 +101,9 @@ public String getName () {
 //method used to just demonstrate co-variant return types
     public Vehicle returnSomeVehicle(){
 return this;
+
 }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }

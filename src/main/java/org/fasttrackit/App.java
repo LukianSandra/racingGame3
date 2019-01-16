@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.CheatingCar;
+
 /**
  * Hello world!
  *
@@ -30,24 +32,24 @@ public class App {
 
         CheatingCar cheatingCompetitor = new CheatingCar();
         cheatingCompetitor.setName ("Test1");
-        double distance = cheatingCompetitor.accelerate (speed:70);
+        double distance = cheatingCompetitor.accelerate (70);
         System.out.println("Cheating parcurge distanta de"+ distance);
-        }
+
         AutoVehicle autoVehicle = new AutoVehicle(engine);
 
-        new Car();
+
 
         Vehicle vehicle = new Vehicle();
-        vehicle.accelerate(99.9, durationInHours: 0.5);
+        vehicle.accelerate(99.9, 0.5);
 
         System.out.println("Vehicle distance" + vehicle.getName() +"distance" );
         // declaring a variable and instantiating a Car object
         //this is aso called initializing a variable
        Car firstCompetitor  = new Car(new Engine ());
-       firstCompetitor.setName = "Dacia";
-       firstCompetitor.setColor = "black";
+       firstCompetitor.setName ("Dacia");
+       firstCompetitor.setColor  ("black");
        firstCompetitor.doorCount =5;
-       firstCompetitor.setMileage = 9.5;
+       firstCompetitor.setMileage  (9.5);
 
        //local variables are variables declared inside a method
         //they don't receive default values
@@ -69,13 +71,13 @@ public class App {
 //firstCompetitor.accelerate(speed100,duration30);
 //        System.out.println("Traveled distance"+ TraveledDistance);
 //
-              Vehicle vehicle =new Vehicle();
-              vehicle.applicationTotalNumberOfVehicles= 1;
-        System.out.println("Total from vehicle 1:"+ vehicle.applicationTotalNumberOfVehicles);
-
-        Vehicle vehicle =new Vehicle();
-        vehicle.applicationTotalNumberOfVehicles= 2;
-        System.out.println("Total from vehicle 2:"+vehicle.applicationTotalNumberOfVehicles);
+//             // Vehicle vehicle =new Vehicle();
+//              vehicle.applicationTotalNumberOfVehicles= 1;
+//        System.out.println("Total from vehicle 1:"+ vehicle.applicationTotalNumberOfVehicles);
+//
+//        Vehicle vehicle =new Vehicle();
+//        vehicle.applicationTotalNumberOfVehicles= 2;
+//        System.out.println("Total from vehicle 2:"+vehicle.applicationTotalNumberOfVehicles);
 
 
 

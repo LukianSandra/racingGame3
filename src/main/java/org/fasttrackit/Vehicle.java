@@ -5,7 +5,6 @@ public class Vehicle {
     public static int applicationTotalNumberOfVehicles;
 
 
-
     private String name;
 
     public int getWheelCount() {
@@ -28,9 +27,7 @@ public class Vehicle {
     private int wheelCount;
     private double mileage;
     private long totalKm;
-    private double fuelLevel = 70 ;
-
-
+    private double fuelLevel = 70;
 
 
     public void setName(String name) {
@@ -66,12 +63,12 @@ public class Vehicle {
 
         System.out.println(name + "accelerated with" + speed +
                 "km/h for" + durationInHours + "minutes");
-double distance = speed * durationInHours;
+        double distance = speed * durationInHours;
         System.out.println("Travel distance" + distance);
 
-        double spentFuel = distance * mileage/100;
+        double spentFuel = distance * mileage / 100;
 
-      // same as: fuelLevel = fuelLevel - spentFuel;
+        // same as: fuelLevel = fuelLevel - spentFuel;
         fuelLevel -= spentFuel;
         System.out.println("Remaining fuel" + fuelLevel);
 
@@ -83,24 +80,27 @@ double distance = speed * durationInHours;
     }
     //method overloading
 
-    public double accelerate (double speed){
-        double distance = speed*1;
-        return distance;
+    // public double accelerate (double speed){
+    //   double distance = speed*1;
+    // return distance;
+
+
+    public double accelerate(double speed) {
+        return accelerate(speed, 1);
 
     }
-public  double accelerate (double speed){
-         return accelerate (speed, 1);
 
-}
-public String getName () {
+    public String getName() {
         return name;
-}
-//method used to just demonstrate co-variant return types
-    public Vehicle returnSomeVehicle(){
-return this;
+    }
 
-}
+    //method used to just demonstrate co-variant return types
+    public Vehicle returnSomeVehicle() {
+        return this;
+
+    }
 
     public double getFuelLevel() {
         return fuelLevel;
     }
+}

@@ -9,6 +9,9 @@ public class App {
 
 
         Game game = new Game();
+        game.addCompetitors(2);
+        game.displayCompetitors();
+
         game.addTrack(0,new Track("Highway",300));
         game.addTrack(1,new Track("Seaside",100));
 
